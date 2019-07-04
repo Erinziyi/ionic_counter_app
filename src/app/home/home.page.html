@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Counter app!
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <h1 style="text-align: center; font: size 150px;">{{ counter }}</h1>
+    <p>{{ message }}</p>
+    <ion-button
+      color="primary"
+      expand="block"
+      fill="outline"
+      (click)="incrementPressed()"
+      >Increment</ion-button
+    >
+
+    <ion-button
+      color="warning"
+      expand="block"
+      fill="outline"
+      (click)="decrementPressed()"
+      >Decrement</ion-button
+    >
+
+    <ion-button
+      color="danger"
+      expand="block"
+      fill="outline"
+      (click)="resetPressed()"
+      >Reset</ion-button
+    >
+
+    <ion-button color="secondary" expand="block" (click)="alertPressed()"
+      >Show Alert</ion-button
+    >
+
+    <ion-button color="success" expand="block" (click)="actionSheetPressed()"
+      >Show Action Sheet</ion-button
+    >
+  </div>
+</ion-content>
